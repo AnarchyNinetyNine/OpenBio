@@ -24,7 +24,7 @@ from bioinformatics_tools import dna_stats
 dna_string = "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC"
 dna_stats(dna_string)
 
-# Output: 20 12 17 21
+# Output: A: 20, C: 12, G: 17, T: 21
 ```
 
 ## Contributing
