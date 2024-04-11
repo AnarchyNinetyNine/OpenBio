@@ -24,6 +24,5 @@ def dna_stats(dna_string):
     nucleotides = ['A', 'C', 'G', 'T']
     counts = [dna_string.count(nuc) for nuc in nucleotides]
 
-    for count in counts:
-        print(count, end=" ")
-
+    for nuc, count in zip(nucleotides, counts):
+        print(f"{nuc}: {count}", end=" ")
