@@ -8,6 +8,7 @@ Clone this repository to your local machine using:
 
 ```bash
 git clone https://github.com/AnarchyNinetyNine/bioinformatics_tools.git
+```
 
 ## Functions
 
@@ -22,6 +23,7 @@ from bioinformatics_tools import dna_stats
 
 dna_string = "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC"
 dna_stats(dna_string)
+```
 # Output: 20 12 17 21
 
 ## Contributing
