@@ -4,27 +4,26 @@
 
 def dna_stats(dna_string):
     """
-    Counts the number of occurrences of each nucleotide in a given strand of DNA.
+    Count the occurrences of each nucleotide in a given DNA strand.
 
+    This function takes a string representing a DNA sequence and counts the number of times each nucleotide ('A', 'C', 'G', 'T') appears in the sequence.
 
     Args:
+        dna_string (str): A string representing the sequence of nucleobases in a single strand of DNA.
 
-    dna_string: A string representing the order of nucleobases along one strand of a double-stranded DNA molecule.
+    Returns:
+        None
 
+    Prints:
+        The counts of 'A', 'C', 'G', 'T' separated by spaces.
 
-    Usage:
-
-    >>> dna_stats("AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC")
-    20 12 17 21
-
+    Example:
+        >>> dna_stats("AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC")
+        20 12 17 21
     """
-    nucleotideList = ['A', 'C', 'G', 'T']
-    countList = []
-    
-    for item in nucleotideList:
-        countList.append(dna_string.count(item))
+    nucleotides = ['A', 'C', 'G', 'T']
+    counts = [dna_string.count(nuc) for nuc in nucleotides]
 
-    for item in countList:
-        print(item, end=" ")
+    for count in counts:
+        print(count, end=" ")
 
-dna_stats("AGAAGTTGCAACGAATAGGTTTGGCCGGCGCAAGACGTCAAACATAGCCCTCTCGCAGAAGTTTGGCAAATACGTAATGTGAAAGGTGGACCAAACGACCTCGTAAAGCTTTCGGCAGGAGTCCCACAATTTGCACATCCACAGTCCACTGTACTGGTGCAGAATGGGTTTGCAGCGGCTTGGGAACGCGGAATGACACTAGGGATGATTTAGACACTACTAAGCGCTCCAGTTTGCACCCCCGGGGGGACGAGTCGCTCGCTCCCGGAGAGTAGTCCGGCAATAGATCGTTAGTCTATGTGCTCCGCACCTGTATTTTTCACTGTAGCGTTAAGATAGAGCTGAGTAAACCTCAGGTTTCGACCCTCCTCTCAGGGGAGCGAGCAGTGGGTCATTAAGTCGGGAAGCCGAGAATTGCCCTGGAAGAGTCTCGAAGATGCCACGCGAGTCAGTTCGTAGGCGTACAAGTGTAGTAAGCCCATCGTCCCGCCCTTTGGGCCCTAGCCAGGCTATCGGTTGAAGGCTAAACGCCGAGAGCTCACGAGCGCAATGAGCTATTTATCCTTAAGAACCGGTGCTCCGTTACTACAACGCCGTTTCTACAAACATAGGATGTATACCATATTATGTGCTATAGAGTCTCGTGAGTTGCTCTGGCCACAGATCGGGCTGCTTTCCACTAAGTTTACCGACCTGCGCAAACTATGGTTTGGAAGGTTGAACTGTAAAGGCCATAGCCTAGAGTTAATCATCGAAGGCTCCTCGATTACTCAGACTCAACCGCAGTCTTCTTCTCAGCCTGTATTCCGGGACCGTCTCGCAGCTT")
