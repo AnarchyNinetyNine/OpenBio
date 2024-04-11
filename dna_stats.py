@@ -15,7 +15,8 @@ def dna_stats(dna_string):
         None
 
     Prints:
-        The counts of 'A', 'C', 'G', 'T' separated by spaces.
+        The counts of 'A', 'C', 'G', 'T' in the format:
+        A: count_A, C: count_C, G: count_G, T: count_T
 
     Example:
         >>> dna_stats("AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC")
