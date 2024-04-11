@@ -19,10 +19,10 @@ def dna_stats(dna_string):
 
     Example:
         >>> dna_stats("AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC")
-        20 12 17 21
+        A: 20, C: 12, G: 17, T: 21
     """
     nucleotides = ['A', 'C', 'G', 'T']
     counts = [dna_string.count(nuc) for nuc in nucleotides]
 
     for nuc, count in zip(nucleotides, counts):
-        print(f"{nuc}: {count}", end=" ")
+        print(f"{nuc}: {count}", end=", " if nuc != nucleotides[-1] else " ")
