@@ -32,4 +32,4 @@ Contributions are welcome! Feel free to open issues or pull requests for new fea
 
 ## License
 
-This project is licensed under the MIT License - see the [MIT License file](https://github.com/AnarchyNinetyNine/bioinformatics_tools/blob/main/LICENSE) for details.
+This project is licensed under the MIT License - see the [License page](https://github.com/AnarchyNinetyNine/bioinformatics_tools/blob/main/LICENSE) for details.
